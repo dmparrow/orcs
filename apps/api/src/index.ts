@@ -5,7 +5,7 @@ import { getDb } from "./db";
 export function buildApp() {
   const app = Fastify({ logger: true });
 
-  // Ensure database is initialised on startup
+  // Ensure database is initialized on startup
   getDb();
 
   registerRunRoutes(app);
